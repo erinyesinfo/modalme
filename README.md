@@ -10,7 +10,8 @@ Modalme
 Modalme is React component for using custom modals
 
 ## Getting started
-[![npm version](https://badge.fury.io/js/react-image-gallery.svg)](http://www.npmjs.com/package/modalme)
+
+[![npm-package (2 0 0)](https://user-images.githubusercontent.com/59801428/90342623-da4c9180-e009-11ea-9189-d134afa6f154.png)](http://www.npmjs.com/package/modalme)
 ```
 npm install modalme
 ```
@@ -25,18 +26,19 @@ import 'modalme/dist/index.css';
 ```js
 import React, { Component } from 'react';
 import Modalme from 'modalme';
+import 'modalme/dist/index.css';
 
 class App extends Component {
   customButton = openModal => (
-    <button type='button' className='modal-custom-btn' onClick={openModal}>
+    <button type='button' className='_1I0MO' onClick={openModal}>
       Click me!
     </button>
   );
   customContent = closeModal => {
     return (
-      <div className='custom-content'>
+      <div className='_3BV9V'>
         <h2>Hello, Welcom to modalme</h2>
-        <button type='button' className='modal-custom-btn-close'
+        <button type='button' className='_330Pu'
         onClick={closeModal}>
           X
         </button>
@@ -47,7 +49,7 @@ class App extends Component {
     return (
       <Modalme customButton={this.customButton}
         customContent={this.customContent}
-        modalName='bottom'
+        modalName='Bottom'
         modalContainer='modal'
       />
     );
@@ -69,9 +71,9 @@ export default App;
   * Passes `openModal` callback function to open modal
   ```javascript
     customButton = openModal => (
-        <button type='button' className='modal-custom-btn' onClick={openModal}>
-          Click me!
-        </button>
+      <button type='button' className='_1I0MO' onClick={openModal}>
+        Click me!
+      </button>
     );
   ```
 * `renderCustomContent`: Function, custom modal content component (required)
@@ -80,9 +82,9 @@ export default App;
   ```javascript
     customContent = closeModal => {
       return (
-        <div className='custom-content'>
+        <div className='_3BV9V'>
           <h2>Hello, Welcom to modalme</h2>
-          <button type='button' className='modal-custom-btn-close'
+          <button type='button' className='_330Pu'
           onClick={closeModal}>
             X
           </button>
@@ -90,9 +92,32 @@ export default App;
       );
     };
   ```
+
+
+## Support
+
+Please [open an issue](https://github.com/erinyesinfo/modalme/issues).
+
 ## Author
 
 erinyes 2020, [erinyes.com](https://erinyes.netlify.app)
+
+## Donation
+
+If this project help you reduce time to develop, you can give me a cup of coffee :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.patreon.com/bePatron?u=40714472)
+
+## Contributing
+
+Each PR should be specific and isolated to the issue you're trying to fix. Please do not stack features/chores/refactors/enhancements in one PR. Describe your feature/implementation in the PR. If you're unsure its useful or if it is a major change, please open an issue first and get feedback.
+
+* Follow eslint provided
+* Comment your code
+* Write [clean](https://github.com/ryanmcdermott/clean-code-javascript) code
+
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch,
+add commits, and [open a pull request](https://github.com/erinyesinfo/modalme/compare/).
 
 # License
 

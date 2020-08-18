@@ -269,6 +269,13 @@ const Styles = ({ modalName }) => {
                 -webkit-transform: scale(0);
                 -o-transform: scale(0);
                 transform: scale(0); }
+              }@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
               }
             `}</style>
         );
@@ -529,7 +536,14 @@ const Styles = ({ modalName }) => {
                 0% {opacity: 1;top: 0px; }
                 100% { opacity: 0;top: -20px; }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'Top') {
         return (
@@ -801,7 +815,14 @@ const Styles = ({ modalName }) => {
                 -o-transform: scale(0);
                 transform: scale(0); }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'Right') {
         return (
@@ -1057,7 +1078,14 @@ const Styles = ({ modalName }) => {
                 0% { opacity: 1;top: 0px; }
                 100% { opacity: 0;top: -20px; }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'Unfolding') {
         return (
@@ -1278,6 +1306,13 @@ const Styles = ({ modalName }) => {
                 -webkit-transform: scale(0);
                 -o-transform: scale(0);
                 transform: scale(0); }
+              }@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
               }
             `}</style>
         );
@@ -1566,6 +1601,13 @@ const Styles = ({ modalName }) => {
                 -webkit-transform: scale(0);
                 -o-transform: scale(0);
                 transform: scale(0); }
+              }@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
               }
             `}</style>
         );
@@ -1782,7 +1824,14 @@ const Styles = ({ modalName }) => {
                 -o-transform: translateY(400px);
                 transform: translateY(400px); }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'BlowUp') {
         return (
@@ -2019,7 +2068,14 @@ const Styles = ({ modalName }) => {
                     transform: scale(0);
                     opacity: 0; }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'Sketch') {
         return (
@@ -2289,7 +2345,14 @@ const Styles = ({ modalName }) => {
                 0% { opacity: 1;top: 0px; }
                 100% { opacity: 0;top: -20px; }
             }
-            `}</style>
+@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }            `}</style>
         );
     } else if (modalName === 'Bond') {
         return (
@@ -2564,7 +2627,14 @@ const Styles = ({ modalName }) => {
                 -webkit-transform: scale(0);
                 -o-transform: scale(0);
                 transform: scale(0); }
-            }            
+            }  @media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
+              }          
             `}</style>
         );
     } else {
@@ -2835,6 +2905,13 @@ const Styles = ({ modalName }) => {
                 -webkit-transform: scale(0);
                 -o-transform: scale(0);
                 transform: scale(0); }
+              }@media screen and (max-width: 768px) {
+                .modal-custom-content { width: 450px; }
+              }@media screen and (max-width: 576px) {
+                .modal-custom-content {
+                width: 200px;
+                height: 250px; }
+                .modalme-btns { grid-template-columns: auto auto auto; }
               }
             `}</style>
         );

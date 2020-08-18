@@ -43,13 +43,3 @@
     cursor: pointer;
 }.modalme-btns .modalme-btn:hover { background-color: rgb(149, 199, 216); }
 .modalme-btns .modalme-btn.active { background-color: steelblue; }
-
-@media screen and (max-width: 768px) {
-    .modal-custom-content { width: 450px; }
-}
-@media screen and (max-width: 576px) {
-    .modal-custom-content {
-    width: 200px;
-    height: 250px; }
-    .modalme-btns { grid-template-columns: auto auto auto; }
-}

@@ -33,7 +33,8 @@ class Modalme extends Component {
         element.overflow = 'unset';
         if (modalName !== 'Unfolding') { element.backgroundColor = 'unset'; }
         this.setState({ modalme: false });
-        if (modalName === 'Uncovering' || modalName === 'BlowUp' || modalName === 'Sketch') {
+        if (modalName === 'Uncovering' || modalName === 'BlowUp'
+        || modalName === 'Sketch' || modalName === 'Revealing') {
             const timeOut = setTimeout(() => {
                 this.setState({ mount: false });
                 clearTimeout(timeOut)
@@ -43,8 +44,8 @@ class Modalme extends Component {
                 this.setState({ mount: false });
                 clearTimeout(timeOut)
             }, 1000);
-        } else if (modalName === 'top' || modalName === 'right'
-        || modalName === 'bottom' || modalName === 'left') {
+        } else if (modalName === 'Top' || modalName === 'Right'
+        || modalName === 'Bottom' || modalName === 'Left') {
             const timeOut = setTimeout(() => {
                 this.setState({ mount: false });
                 clearTimeout(timeOut)
