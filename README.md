@@ -26,7 +26,6 @@ import 'modalme/dist/index.css';
 ```js
 import React, { Component } from 'react';
 import Modalme from 'modalme';
-import 'modalme/dist/index.css';
 
 class App extends Component {
   customButton = openModal => (
