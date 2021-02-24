@@ -3,10 +3,7 @@ import SVG from './Modalme/Icon';
 import Modalme from './Modalme';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { active: localStorage.getItem('modalName') || 'bottom' };
-    };
+    state = { active: localStorage.getItem('modalName') || 'bottom' };
     capitalizeFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1);
     handleChangeButton = modalname => this.setState({ active: modalname }, localStorage.setItem('modalName', modalname));
     customButton = openModal => (

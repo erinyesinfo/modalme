@@ -11,7 +11,7 @@ Modalme is React component for using custom modals
 
 ## Getting started
 
-[![npm-package (2 0 0)](https://user-images.githubusercontent.com/59801428/90342623-da4c9180-e009-11ea-9189-d134afa6f154.png)](http://www.npmjs.com/package/modalme)
+[![npm-package (2 5 0)](https://user-images.githubusercontent.com/59801428/90342623-da4c9180-e009-11ea-9189-d134afa6f154.png)](http://www.npmjs.com/package/modalme)
 ```
 npm install modalme
 ```
@@ -25,6 +25,7 @@ import 'modalme/dist/index.css';
 ### Example
 ```js
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Modalme from 'modalme';
 
 class App extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
       <Modalme customButton={this.customButton}
         customContent={this.customContent}
         modalName='Bottom'
+        ReactDOM={ReactDOM}
         modalContainer='modal'
       />
     );
@@ -62,6 +64,11 @@ export default App;
 
 * `modalContainer`: String, (required)
   * Make sure to bind modal to your appElement
+```html
+    <!-- make sure to add add this line of code in your public folder -->
+    <div id="modal"></div>
+  ```
+
 * `modalName`: String, default `Bottom`
   * available string props: `Top, Right, Bottom, Left, Unfolding, Revealing, Uncovering, BlowUp, Sketch, Bond`
   

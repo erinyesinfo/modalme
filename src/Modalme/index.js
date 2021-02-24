@@ -3,10 +3,7 @@ import Modal from './Modal';
 import './index.css';
 
 class Modalme extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { mount: false, modalme: false };
-    };
+    state = { mount: false, modalme: false };
     componentDidUpdate() {
         if (!this.state.mount && document.querySelector('body').style.backgroundColor === 'black') {
             document.querySelector('body').style.overflow = 'unset';
